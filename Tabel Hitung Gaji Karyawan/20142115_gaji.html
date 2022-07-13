@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaji karyawan</title>
+</head>
+<body>
+    <center> <h1>Hitung Gaji Karyawan</h1> </center>
+    
+    <form action="20142115_proses_gaji.php" method="post">
+        <table border="1" cellpadding="5" cellspacing="0" align="center">
+            <tr>
+                <td colspan="2" align="center"><h3>Tabel Hitung Gaji Karyawan</h3></td>
+            </tr>
+            <tr>
+                <td>Gaji Pokok</td>
+                <td>Rp. <input type="text" name="gaji"></td>
+            </tr>
+            <tr>
+                <td>Tunjangan Jabatan</td>
+                <td>
+                    <input type="radio" name="tunjangan" value="10000" checked>Manager Rp. 10.000,-
+                    <br>
+				    <input type="radio" name="tunjangan" value="8000"> Supervisor Rp. 8.000,-
+                    <br>
+                    <input type="radio" name="tunjangan" value="6000"> Foreman Rp. 6.000,-
+                </td>
+            </tr>
+            <tr>
+                <td>Bonus</td>
+                <td><input type="text" name="bonus">%</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="HITUNG GAJI"></td>
+            </tr>
+        </table>
+</body>
+</html>
